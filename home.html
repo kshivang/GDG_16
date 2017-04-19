@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>COS</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-database.js"></script>
+  <link rel="stylesheet" type="text/css" href="page.css" />
+<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDQVwgIlU31i0WP0HaT1bAABfzsPwp68X8",
+    authDomain: "campusorderingsystem.firebaseapp.com",
+    databaseURL: "https://campusorderingsystem.firebaseio.com",
+    storageBucket: "campusorderingsystem.appspot.com",
+    messagingSenderId: "930815695352"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script src="auth.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="page.css" />
+</head>
+
+<body style="text-align:center">
+  <input placeholder="Email" id="email" type="email"/> <br>
+  <input placeholder="Password" id="password" type="password" /> </br>
+
+  <button type="submit" class="btn btn-primary btn-md" onclick="signIn()">Sign In !</button>
+
+</body>
+</html>
